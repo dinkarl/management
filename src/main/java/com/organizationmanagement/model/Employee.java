@@ -69,10 +69,6 @@ public class Employee {
 	}
 
 
-	public Organization getOrganization() {
-		return organization;
-	}
-
 	public void setOrganization(Organization organization) {
 		this.organization = organization;
 	}
