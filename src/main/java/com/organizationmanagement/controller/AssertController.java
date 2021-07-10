@@ -40,7 +40,6 @@ public class AssertController {
 	public Asserts updateOrganization (@RequestBody Asserts asserts,@PathVariable String id) {
 		return assertRepo.findById(id).map(i-> {
 			    	  i.setAssertName(asserts.getAssertName());
-			    	  i.setOrganization(asserts.getOrganization());
 			    	  i.setAssertType(asserts.getAssertType());
 			          return assertRepo.save(i);
 			        })
