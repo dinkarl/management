@@ -48,6 +48,6 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter
                 .setExpiration(new Date(System.currentTimeMillis() + 864_000_000))
                 .signWith(SignatureAlgorithm.HS512, "SecretKeyToGenJWTs".getBytes())
                 .compact();
-        response.addHeader("Authorization","Bearer " + token);
+        response.addHeader("Authorization",token);
     }
 }
