@@ -52,7 +52,6 @@ public class EmployeeController {
 			    	  i.setEmpName(emp.getEmpName());
 			    	  i.setDesignation(emp.getDesignation());
 			    	  i.setEmaiId(emp.getEmaiId());
-			    	  i.setOrganization(emp.getOrganization());
 			          return employeeRepo.save(i);
 			        })
 			        .orElseGet(() -> {
