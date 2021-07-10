@@ -55,9 +55,6 @@ public class Asserts {
 	}
 
 
-	public Organization getOrganization() {
-		return organization;
-	}
 
 	public void setOrganization(Organization organization) {
 		this.organization = organization;
